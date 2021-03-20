@@ -12,10 +12,10 @@ export default function Card({word, isFlipped, flip}) {
                 </div>
 
                 <div className="word-card-back">
-                    <p className="word-card-back-line"><b>Word: </b>{word.word}</p>
-                    <p className="word-card-back-line"><b>Type: </b>{word.type}</p>
-                    <p className="word-card-back-line"><b>Meaning: </b>{word.meaning}</p>
-                    <p className="word-card-back-line"><b>Example: </b>{word.example}</p>
+                    <p className="word-card-back-line"><b>Word:</b> {word.word}</p>
+                    <p className="word-card-back-line"><b>Type:</b> {word.type}</p>
+                    <p className="word-card-back-line"><b>Meaning:</b> {word.meaning}</p>
+                    <p className="word-card-back-line"><b>Example:</b> {word.example}</p>
                 </div>
             </ReactCardFlip>
         </div>
