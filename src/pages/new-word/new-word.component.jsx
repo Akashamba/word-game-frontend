@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from '../../components/word-card/word-card.component';
+import Buttons from '../../components/word-buttons/word-buttons.component'
 
-function nextWord(flip, current, setCurrent, setWords) {
+function getNextWord(flip, current, setCurrent, setWords) {
     flip(false)
     if(current<9) {
         setCurrent(current+1)
@@ -30,7 +31,7 @@ export default function NewWord() {
         return (
             <div className="new-word">
                 <Card word={words[current]} isFlipped={isFlipped} flip={flip} />
-                <button onClick={() => nextWord(flip, current, setCurrent, setWords)}>Click</button>
+                <Buttons word={words[current]} getNextWord={getNextWord} flip={flip} current={current} setCurrent={setCurrent} setWords={setWords} />
             </div>
         )
     }

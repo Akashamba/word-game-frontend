@@ -1,0 +1,35 @@
+.button {
+    width: 90%;
+    font-size: 1.1rem;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.known {
+    color: rgb(0, 126, 0);
+    background-color: rgba(112, 250, 112, 0.3);
+}
+
+.known:hover {
+    background-color: rgba(112, 250, 112, 0.5);
+}
+
+.unknown {
+    color: rgba(255,0,0, 1);
+    background-color: rgba(248, 120, 120, 0.3);
+}
+
+.unknown:hover {
+    background-color: rgba(248, 120, 120, 0.5);
+}
+
+@media(min-width: 1280px) {
+    .button {
+        width: 50%;
+    }
+}

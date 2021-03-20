@@ -3,10 +3,10 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 100px;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     right: 0;
-    width: 100vw;
+    width: 100vw; */
 }
 
 .footer-nav-link {
