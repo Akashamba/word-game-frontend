@@ -1,0 +1,29 @@
+.word-card {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+}
+
+.word-card-front {
+    text-align: center;
+    line-height: 150px;
+}
+
+.word-card-back {
+    padding: 10px;
+}
+
+.word-card-back-line {
+    margin-bottom: 25px;
+}
+
+@media(min-width: 1280px) {
+    .word-card {
+        width: 50%;
+        height: 350px;
+    }
+
+    .word-card-front {
+        line-height: 300px;
+    }
+}

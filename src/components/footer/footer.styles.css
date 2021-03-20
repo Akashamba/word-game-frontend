@@ -1,0 +1,20 @@
+footer {
+    background-color: #ebebed;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+}
+
+.footer-nav-link {
+    color: #000;
+    text-decoration-color: #f43b47;
+    margin: 10px;
+}
+
+.footer-nav {
+    margin-bottom: 40px;
+}

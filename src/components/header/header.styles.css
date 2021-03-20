@@ -1,0 +1,71 @@
+.MuiAppBar-colorPrimary {
+    background-image: linear-gradient(to left, #f43b47 0%, #453a94 100%);
+}
+
+.main-title {
+    display: inline-block;
+    margin: 10px 0px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+.sub-title {
+    display: none;
+}
+
+#menu-icon {
+    margin-left: auto;
+    display: block;
+}
+
+.draw-nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 40px;
+}
+
+.MuiDrawer-paper {
+    background-color: #000!important;
+}
+
+#close-icon {
+    display: block;
+    color: #fff;
+    font-size: 2rem!important;
+    margin: 20px;
+    margin-left: auto;
+}
+
+.navbar {
+    display: none;
+}
+
+@media(min-width: 1280px) {
+    .sub-title {
+        display: inline-block;
+        margin: 20px 0 20px 20px;
+        color: #fff;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    .navbar {
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 7px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.3)
+    }
+}
