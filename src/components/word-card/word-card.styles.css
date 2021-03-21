@@ -1,16 +1,18 @@
 .word-card {
     width: 90%;
     margin: 0 auto;
-    border: 1px solid rgba(0, 0, 0, 0.521);
+    
 }
 
 .word-card-front {
     text-align: center;
     line-height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
 }
 
 .word-card-back {
     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
 }
 
 .word-card-back-line {
