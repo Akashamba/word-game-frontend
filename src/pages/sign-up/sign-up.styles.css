@@ -14,3 +14,9 @@
 .sign-up-in-button:hover {
     background-color: #921635;
 }
+
+.sign-up-in-title {
+    margin-left: 10px;
+    margin-right: 10px; 
+    text-align: center;
+}

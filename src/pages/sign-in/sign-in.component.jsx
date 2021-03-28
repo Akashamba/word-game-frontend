@@ -1,8 +1,7 @@
 import React from 'react';
 import {TextField} from '@material-ui/core';
-import './sign-up.styles.css'
 
-export default function SignUp() {
+export default function SignIn() {
     const form = {}
 
     const handleSubmit = (event) => {
@@ -17,13 +16,11 @@ export default function SignUp() {
 
     return (
         <div className="sign-up">
-            <h1 className="sign-up-in-title">Create a New Account</h1>
+            <h1 className="sign-up-in-title">Sign in with an existing account</h1>
             <form onSubmit={handleSubmit}>
-                <TextField autoComplete="off" name="full-name" onChange={handleChange} required label="Full Name" className="input" variant="outlined" size="small"/><br/><br/>
                 <TextField autoComplete="off" name="username" onChange={handleChange} required label="Username" className="input" variant="outlined" size="small"/><br/><br/>
                 <TextField autoComplete="off" name="password" type="password" onChange={handleChange} required label="Password" className="input" variant="outlined" size="small"/><br/><br/>
-                <TextField autoComplete="off" name="confirm-password" type="password" onChange={handleChange} required label="Confirm Password" className="input" variant="outlined" size="small"/><br/><br/><br/><br/>
-                <button type="submit" className="button sign-up-in-button">Sign Up</button>
+                <button type="submit" className="button sign-up-in-button">Sign In</button>
             </form>
         </div>
     )
