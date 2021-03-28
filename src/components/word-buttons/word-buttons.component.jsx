@@ -3,7 +3,7 @@ import './word-buttons-styles.css';
 
 function markWord(word, status, getNextWord) {
     getNextWord()
-    fetch("https://sh-word-game-backend.herokuapp.com/", {
+    fetch("https://word-game-backend.glitch.me/api/mark-word", {
         method: "POST",
         body: {
             word: word,
