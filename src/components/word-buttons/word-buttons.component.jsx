@@ -3,7 +3,7 @@ import './word-buttons-styles.css';
 
 function markWord(word, status, getNextWord) {
     getNextWord()
-    fetch("https://word-game-backend.glitch.me/api/mark-word", {
+    fetch(`${process.env.REACT_APP_API}/api/mark-word`, {
         method: "POST",
         body: {
             word: word,

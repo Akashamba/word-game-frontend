@@ -18,7 +18,7 @@ class NewWord extends React.Component {
     }
 
     fetchWords = () => {
-        fetch("https://word-game-backend.glitch.me/api/placeholder-words")
+        fetch(`${process.env.REACT_APP_API}/api/placeholder-words`)
         .then(response => response.json())
         .then(words => this.setState({words: words, current: 0, isFlipped: false}))
     }
