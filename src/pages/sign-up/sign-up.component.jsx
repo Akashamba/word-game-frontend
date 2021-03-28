@@ -21,8 +21,8 @@ export default function SignUp() {
             <form onSubmit={handleSubmit}>
                 <TextField autoComplete="off" name="full-name" onChange={handleChange} required label="Full Name" className="input" variant="outlined" size="small"/><br/><br/>
                 <TextField autoComplete="off" name="username" onChange={handleChange} required label="Username" className="input" variant="outlined" size="small"/><br/><br/>
-                <TextField autoComplete="off" name="password" type="password" onChange={handleChange} required label="Password" type="password" className="input" variant="outlined" size="small"/><br/><br/>
-                <TextField autoComplete="off" name="confirm-password" type="password" onChange={handleChange} required label="Confirm Password" type="password" className="input" variant="outlined" size="small"/><br/><br/><br/><br/>
+                <TextField autoComplete="off" name="password" type="password" onChange={handleChange} required label="Password" className="input" variant="outlined" size="small"/><br/><br/>
+                <TextField autoComplete="off" name="confirm-password" type="password" onChange={handleChange} required label="Confirm Password" className="input" variant="outlined" size="small"/><br/><br/><br/><br/>
                 <button type="submit" className="button sign-up-in-button">Sign Up</button>
             </form>
         </div>
