@@ -41,7 +41,7 @@ export default function SignIn() {
             <form onSubmit={handleSubmit}>
                 <TextField onChange={handleChange} value={form["username"]} autoComplete="off" name="username" required label="Username" className="input" variant="outlined" size="small"/><br/><br/>
                 <TextField onChange={handleChange} value={form["password"]} autoComplete="off" name="password" required type={showPassword?"password":null} label="Password" className="input" variant="outlined" size="small"/><br/><br/>
-                <input type="checkbox" onClick={() => setShowPassword(!showPassword)}/> Show Password<br/><br/><br/>
+                <input name="show-password" type="checkbox" onClick={() => setShowPassword(!showPassword)}/> <label for="show-password">Show Password</label><br/><br/><br/>
                 <button type="submit" className="button sign-up-in-button">Sign In</button>
             </form>
         </div>
