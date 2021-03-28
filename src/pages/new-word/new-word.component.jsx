@@ -18,9 +18,9 @@ class NewWord extends React.Component {
     }
 
     fetchWords = () => {
-        fetch("https://sh-word-game-backend.herokuapp.com/")
+        fetch("https://word-game-backend.glitch.me/api/placeholder-words")
         .then(response => response.json())
-        .then(words => this.setState({words: words.words, current: 0, isFlipped: false}))
+        .then(words => this.setState({words: words, current: 0, isFlipped: false}))
     }
 
     getNextWord = () => {
