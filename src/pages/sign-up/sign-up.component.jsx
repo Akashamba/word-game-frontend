@@ -6,7 +6,7 @@ import axios from 'axios';
 import {useHistory} from 'react-router-dom';
 import './sign-up.styles.css'
 
-export default function SignUp() {
+export default function SignUp({setUser}) {
     const [form, setForm] = React.useState({
         "full-name": "",
         "username": "",
@@ -42,6 +42,10 @@ export default function SignUp() {
                     "password" :"",
                     "confirm-password": ""
                 });
+                localStorage.setItem("token", response.data.token);
+                localStorage.setItem("username", response.data.username);
+                setUser(response.data);
+                console.log(response);
                 history.push('/');
             })
             .catch(err => alert(err.response.data))
@@ -64,7 +68,7 @@ export default function SignUp() {
                 <TextField onChange={handleChange} value={form["username"]} autoComplete="off" name="username" required label="Username" className="input" variant="outlined" size="small"/><br/><br/>
                 <TextField onChange={handleChange} value={form["password"]} autoComplete="off" name="password" required type={showPassword?"password":null} label="Password" className="input" variant="outlined" size="small"/><br/><br/>
                 <TextField onChange={handleChange} value={form["confirm-password"]} autoComplete="off" name="confirm-password" required type={showPassword?"password":null} label="Confirm Password" className="input" variant="outlined" size="small"/><br/><br/>
-                <input name="show-password" type="checkbox" onClick={() => setShowPassword(!showPassword)}/> <label for="show-password">Show Password</label><br/><br/><br/>
+                <input name="show-password" type="checkbox" onClick={() => setShowPassword(!showPassword)}/> <label htmlFor="show-password">Show Password</label><br/><br/><br/>
                 <button type="submit" className="button sign-up-in-button">Sign Up</button>
             </form>
         </div>
