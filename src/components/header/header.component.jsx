@@ -15,6 +15,7 @@ export default function Header({user, setUser}) {
             token: "",
             username: ""
         });
+        setDrawOpen(false);
     }
     return (
         <AppBar position="fixed">
@@ -34,6 +35,10 @@ export default function Header({user, setUser}) {
                 <MenuIcon id="menu-icon" onClick={() => setDrawOpen(true)}/>
                 <Drawer className="draw" anchor="right" open={drawOpen} onClose={() => setDrawOpen(false)}>
                     <CloseIcon id="close-icon" onClick={() => setDrawOpen(false)}/>
+                    {username?
+                        <Link className="draw-nav-link" onClick={handleSignOut}>Sign Out from 
+                        <span style={{fontWeight: "bold"}}> {username}</span></Link>
+                        :null}
                     <Link className="draw-nav-link" onClick={() => setDrawOpen(false)} to="/">Learn</Link>
                     <Link className="draw-nav-link" onClick={() => setDrawOpen(false)} to="/sign-in">Sign In</Link>
                     <Link className="draw-nav-link" onClick={() => setDrawOpen(false)} to="/sign-up">Sign Up</Link>
