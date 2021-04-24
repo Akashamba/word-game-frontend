@@ -16,8 +16,8 @@ export default function Buttons({word, getNextWord}) {
     return(
         <div className="buttons">
             <br/>
-            <div onClick={() => markWord(word, "known", getNextWord, )} className="button known">I knew this word</div>
-            <div onClick={() => markWord(word, "unknown", getNextWord, )} className="button unknown">I didn't know this word</div>
+            <div onClick={() => markWord(word, "known", getNextWord, )} className="button known">Correct</div>
+            <div onClick={() => markWord(word, "unknown", getNextWord, )} className="button unknown">Wrong</div>
         </div>
     )
 }

@@ -1,8 +1,13 @@
+.buttons {
+    margin: 0 auto;
+    width: 50%;
+}
+
 .button {
     width: 90%;
     font-size: 1.1rem;
     border: none;
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     padding: 0;
     cursor: pointer;
